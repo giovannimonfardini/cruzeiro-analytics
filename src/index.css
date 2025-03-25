@@ -28,49 +28,7 @@
   }
 }
 
-@layer components {
-  .btn {
-    @apply inline-flex items-center justify-center px-4 py-2 rounded-md font-medium shadow-sm transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2;
-  }
-
-  .btn-primary {
-    @apply bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500;
-  }
-
-  .btn-secondary {
-    @apply bg-gray-100 text-gray-800 hover:bg-gray-200 focus:ring-gray-500;
-  }
-
-  .card {
-    @apply bg-white rounded-xl shadow-md p-6 border border-gray-100;
-  }
-
-  .badge {
-    @apply inline-block px-2.5 py-0.5 text-xs font-medium rounded-full;
-  }
-
-  .badge-primary {
-    @apply bg-primary-100 text-primary-800;
-  }
-
-  .badge-success {
-    @apply bg-green-100 text-green-800;
-  }
-
-  .badge-warning {
-    @apply bg-yellow-100 text-yellow-800;
-  }
-
-  .input {
-    @apply block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm
-           focus:outline-none focus:ring-primary-500 focus:border-primary-500;
-  }
-
-  .avatar {
-    @apply inline-flex rounded-full overflow-hidden;
-  }
-}
-
+/* Removemos as classes de componentes do CSS global para evitar duplicações e dependências implícitas */
 @layer utilities {
   .text-shadow {
     text-shadow: 0 2px 4px rgba(0,0,0,0.1);

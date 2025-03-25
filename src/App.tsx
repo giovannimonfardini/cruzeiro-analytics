@@ -1,13 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Logo from './components/Logo';
+// Removemos a importação do CSS padrão e do logo SVG padrão
+// import logo from './logo.svg';
+// import './App.css';
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-100 p-8">
       <div className="max-w-4xl mx-auto">
         <header className="text-center mb-12">
-          <img src={logo} className="h-24 mx-auto mb-4 animate-spin" alt="logo" />
+          {/* Usamos o componente Logo personalizado em vez do SVG padrão */}
+          <div className="flex justify-center mb-4">
+            <Logo size="lg" />
+          </div>
           <h1 className="text-4xl font-bold text-primary-600 mb-2">
             Cruzeiro Analytics
           </h1>
@@ -19,7 +24,7 @@ function App() {
         <main>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Card de estatísticas */}
-            <div className="card">
+            <div className="bg-white rounded-xl shadow-md p-6 border border-gray-100">
               <h2 className="text-xl font-semibold text-gray-800 mb-4">
                 Estatísticas do Time
               </h2>
@@ -36,7 +41,7 @@ function App() {
             </div>
 
             {/* Card de próximos jogos */}
-            <div className="card">
+            <div className="bg-white rounded-xl shadow-md p-6 border border-gray-100">
               <h2 className="text-xl font-semibold text-gray-800 mb-4">
                 Próximos Jogos
               </h2>
@@ -54,7 +59,7 @@ function App() {
             </div>
 
             {/* Card de jogadores */}
-            <div className="card">
+            <div className="bg-white rounded-xl shadow-md p-6 border border-gray-100">
               <h2 className="text-xl font-semibold text-gray-800 mb-4">
                 Destaques
               </h2>
@@ -76,7 +81,7 @@ function App() {
           </div>
 
           <div className="mt-8 text-center">
-            <button className="btn btn-primary">
+            <button className="inline-flex items-center justify-center px-4 py-2 rounded-md font-medium shadow-sm transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500">
               Ver análise completa
             </button>
           </div>
