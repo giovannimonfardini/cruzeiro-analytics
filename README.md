@@ -1,3 +1,56 @@
+# Cruzeiro Analytics
+
+Dashboard de análise de times de futebol com foco no Cruzeiro.
+
+## 📋 Sobre o Projeto
+
+Cruzeiro Analytics é uma aplicação web para visualização e análise de dados relacionados ao time do Cruzeiro. O dashboard apresenta estatísticas do time, informações sobre jogadores e próximos jogos.
+
+## 🚀 Tecnologias Utilizadas
+
+- **React**: Biblioteca JavaScript para construção de interfaces
+- **TypeScript**: Superset tipado de JavaScript
+- **Tailwind CSS**: Framework CSS utilitário
+- **Context API**: Gerenciamento de estado da aplicação
+
+## 💻 Funcionalidades
+
+- Visualização de estatísticas do time
+- Informações sobre próximos jogos
+- Destaques de jogadores
+
+## 📦 Instalação
+
+```bash
+# Clone o repositório
+git clone https://github.com/giovannimonfardini/cruzeiro-analytics.git
+
+# Entre no diretório
+cd cruzeiro-analytics
+
+# Instale as dependências
+npm install
+
+# Execute a aplicação
+npm start
+```
+
+## 🎨 Componentes Reutilizáveis
+
+O projeto utiliza uma série de componentes reutilizáveis:
+
+- **Card**: Cartões para exibição de informações
+- **Button**: Botões customizáveis com diferentes variantes
+- **Logo**: Logo personalizado do Cruzeiro
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 👨‍💻 Autor
+
+Giovanni Monfardini
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -31,13 +84,13 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Learn More
 
