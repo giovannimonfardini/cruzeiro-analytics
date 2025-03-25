@@ -1,13 +1,82 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 font-sans text-gray-800;
+  }
+
+  h1 {
+    @apply text-3xl font-bold text-gray-900 mb-4;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold text-gray-800 mb-3;
+  }
+
+  p {
+    @apply text-base text-gray-600 leading-relaxed;
+  }
+
+  a {
+    @apply text-primary-600 hover:text-primary-700 transition-colors;
+  }
+
+  code {
+    @apply bg-gray-100 text-gray-800 rounded px-1 py-0.5 font-mono text-sm;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 rounded-md font-medium shadow-sm transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+
+  .btn-primary {
+    @apply bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-100 text-gray-800 hover:bg-gray-200 focus:ring-gray-500;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-md p-6 border border-gray-100;
+  }
+
+  .badge {
+    @apply inline-block px-2.5 py-0.5 text-xs font-medium rounded-full;
+  }
+
+  .badge-primary {
+    @apply bg-primary-100 text-primary-800;
+  }
+
+  .badge-success {
+    @apply bg-green-100 text-green-800;
+  }
+
+  .badge-warning {
+    @apply bg-yellow-100 text-yellow-800;
+  }
+
+  .input {
+    @apply block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm
+           focus:outline-none focus:ring-primary-500 focus:border-primary-500;
+  }
+
+  .avatar {
+    @apply inline-flex rounded-full overflow-hidden;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .hover-scale {
+    @apply transition duration-300 transform hover:scale-105;
+  }
 }
